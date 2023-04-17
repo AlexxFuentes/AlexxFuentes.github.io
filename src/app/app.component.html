@@ -1,0 +1,23 @@
+<div class="container">
+    <!--=============== NAVIGATION MENU ===============-->
+    <div class="menu">
+        <a [routerLink]="['/']" class="menu-icon">
+            <fa-icon [icon]="faUser"></fa-icon>
+        </a>
+        <a [routerLink]="['/projects']" class="menu-icon">
+            <fa-icon [icon]="faCode"></fa-icon>
+        </a>
+        <a [routerLink]="['/experience']" class="menu-icon">
+            <fa-icon [icon]="faBriefcase"></fa-icon>
+        </a>
+    </div>
+    <!--=============== MAIN "WINDOW" ===============-->
+    <div class="portfolio">
+        <!--=============== HEADER SECTION ===============-->
+        <app-header></app-header>
+        <!--=============== CONTENT SECTION ===============-->
+        <div class="content">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
