@@ -1,0 +1,27 @@
+{
+    "projects": [
+        {
+            "title": "Ingelmeco",
+            "desc": "Aplicación web donde se da a conocer la empresa Ingelmeco y además permite mostrar los productos de la misma de forma interactiva con el modulo de administrador.Se utilizo next en el lado del cliente para un mejor SEO.",
+            "url": "https://ingelmeco.com/",
+            "tech": [
+                "React",
+                "Next.js",
+                "TypeScript",
+                "Firebase",
+                "TailwindCSS"
+            ]
+        },
+        {
+            "title": "Tigershare",
+            "desc": "Aplicación web que permite la elaboración de código de html, js y css de forma colaborativa.",
+            "url": "https://tigershare.vercel.app/",
+            "tech": [
+                "Angular",
+                "Node.js",
+                "MongoDB",
+                "Bootstrap"
+            ]
+        }
+    ]
+}
