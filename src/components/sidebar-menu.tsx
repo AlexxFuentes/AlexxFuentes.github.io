@@ -28,7 +28,6 @@ export function SidebarMenu ({ sideBarActiveItemID } : Props) {
                     href='mailto:contact.aafuentes2030@gmail.com'
                     target='_blank'
                     referrerPolicy='no-referrer-when-downgrade'
-                    // referrerpolicy='no-referrer-when-downgrade'
                 >
                     Contactame
                 </Link>
