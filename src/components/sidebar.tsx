@@ -18,6 +18,7 @@ export function Sidebar ({ sideBarActiveItemID } : Props) {
                         <div className='avatar transition ease-in-out hover:scale-[102%] block m-auto'>
                             <div className='w-[8.5rem]'>
                                 <Image className='mask mask-circle' width={300} height={300} src={'/perfil.jpg'} alt='Profile image' priority={true} />
+                                {/* <Image className='mask mask-circle' width={300} height={300} src={'https://res.cloudinary.com/dn0alzand/image/upload/v1708886246/img_public/xhtmh7wqcwhbaohavtl9.jpg'} alt='Profile image' priority={true} /> */}
                             </div>
                         </div>
                     </Link>
