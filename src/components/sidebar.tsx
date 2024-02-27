@@ -17,8 +17,6 @@ export function Sidebar ({ sideBarActiveItemID } : Props) {
                     <Link href='/'>
                         <div className='avatar transition ease-in-out hover:scale-[102%] block m-auto'>
                             <div className='w-[8.5rem]'>
-                                {/* <Image className='w-24 mask mask-hexagon' width={300} height={300} src={'/perfil.jpg'} alt='Profile image' priority={true} /> */}
-                                
                                 <Image className='mask mask-hexagon' width={500} height={300} src={'/profile-img.jpg'} alt='Profile image' priority={true} />
                             </div>
                         </div>
