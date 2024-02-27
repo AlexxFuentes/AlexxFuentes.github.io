@@ -1,16 +1,18 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    //output:'export',
+    output:'export',
     //reactStrictMode: true,
     images: {
-        remotePatterns: [
-            {
-                protocol: 'https',
-                hostname: 'res.cloudinary.com',
-                port: '',
-                pathname: '/dn0alzand/image/upload/v1708886246/img_public/**',
-            },
-        ],
+        loader: 'custom',
+        loaderFile: './my-loader.ts',
+        // remotePatterns: [
+        //     {
+        //         protocol: 'https',
+        //         hostname: 'res.cloudinary.com',
+        //         port: '',
+        //         pathname: '/dn0alzand/image/upload/v1708886246/**',
+        //     },
+        // ],
     },
 };
 
