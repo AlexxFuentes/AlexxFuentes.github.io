@@ -16,7 +16,14 @@ export function useAuth() {
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
 
-    const [theme, setTheme] = useState('dark')
+    const [theme, setTheme] = useState(() => {
+        const localTheme = localStorage.getItem('theme')
+        return localTheme || 'dark'
+    })
+
+    useEffect(() => {
+        localStorage.setItem('theme', theme)
+    }, [theme])
 
     return <AuthContext.Provider value={{ theme, setTheme }}>{children}</AuthContext.Provider>
 }
