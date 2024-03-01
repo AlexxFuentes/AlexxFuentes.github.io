@@ -2,6 +2,7 @@
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 import { Sidebar } from '@/components/sidebar'
+import { useAuth } from '@/context/auth-context'
 import { useState } from 'react'
 
 interface Props {
@@ -13,7 +14,7 @@ const themes = ['dark', 'dracula', 'light', 'cupcake', 'forest']
 
 export function Container({ children, sideBarActiveItemID }: Props) {
 
-    const [theme, setTheme] = useState('dark')
+    const { setTheme, theme } = useAuth()
 
     const renderThemes = () => {
         return themes.map((theme) => {
