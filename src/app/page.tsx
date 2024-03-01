@@ -32,8 +32,8 @@ export default function Home() {
         <Container key={uuid()} sideBarActiveItemID='home'>
             <div className='pb-12 mt-5'>
                 <div className='text-xl py-1'>Hola a todos 👋</div>
-                <div className='text-5xl font-bold'>Soy Alex Fuentes</div>
-                <div className='text-3xl py-3 font-bold'>Ingeniero en sistemas</div>
+                <div className='text-3xl xl:text-5xl font-bold'>Soy Alex Fuentes</div>
+                <div className='text-2xl xl:text-3xl py-3 font-bold'>Ingeniero en sistemas</div>
                 <div className='py-2'>
                     <p className='text-lg'>
                         Este es mi <b>potafolio web</b> donde muestro mis proyectos y habilidades en el desarrollo web. <br /> <br />
