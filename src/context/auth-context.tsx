@@ -1,5 +1,5 @@
 'use client'
-import { createContext, useContext, useEffect, useState } from 'react'
+import { createContext, use, useContext, useEffect, useState } from 'react'
 
 interface AuthContextProps {
     theme: string;
@@ -17,12 +17,20 @@ export function useAuth() {
 export function AuthProvider({ children }: { children: React.ReactNode }) {
 
     const [theme, setTheme] = useState(() => {
-        const localTheme = localStorage.getItem('theme')
-        return localTheme || 'dark'
+        if (typeof window !== 'undefined') {
+            const storageValue = localStorage.getItem('theme')
+            if (storageValue) {
+                return storageValue
+            }
+        }
+        return 'dark'
     })
 
     useEffect(() => {
-        localStorage.setItem('theme', theme)
+        // localStorage.setItem('theme', theme)
+        if (typeof window !== 'undefined') {
+            localStorage.setItem('theme', theme)
+        }
     }, [theme])
 
     return <AuthContext.Provider value={{ theme, setTheme }}>{children}</AuthContext.Provider>
