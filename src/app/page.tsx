@@ -41,12 +41,12 @@ export default function Home() {
                         Soy una persona proactiva, organizada y responsable. Siempre preparado para utilizar mis habilidades y cada vez aprender más.
                     </p>
                 </div>
-                {/* <div className='mt-8'>
-                    <a className='btn' href='https://www.linkedin.com/in/alex-alfredo-fuentes-maldonado-0a56432ab/' target='_blank'> contactame!</a>
-                    <a href='https://alexxfuentes.github.io/' target='_blank' className='btn btn-outline ml-5'>
-                        Github
+                <div className='mt-8'>
+                    {/* <a className='btn' href='https://www.linkedin.com/in/alex-alfredo-fuentes-maldonado-0a56432ab/' target='_blank'> contactame!</a> */}
+                    <a href='https://flowcv.com/resume/58dbt2q77e' target='_blank' className='btn btn-outline'>
+                        Descargar CV
                     </a>
-                </div> */}
+                </div>
             </div>
             <div>
                 <div className='text-3xl w-full font-bold mb-2'>Mis proyectos {'</>'}</div>
