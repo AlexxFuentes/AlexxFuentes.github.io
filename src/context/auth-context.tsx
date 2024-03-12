@@ -27,7 +27,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     })
 
     useEffect(() => {
-        // localStorage.setItem('theme', theme)
         if (typeof window !== 'undefined') {
             localStorage.setItem('theme', theme)
         }
