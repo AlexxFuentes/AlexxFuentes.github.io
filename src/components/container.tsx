@@ -3,7 +3,6 @@ import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 import { Sidebar } from '@/components/sidebar'
 import { useAuth } from '@/context/auth-context'
-import { useState } from 'react'
 
 interface Props {
     children: React.ReactNode;
